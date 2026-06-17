@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "name": "solarized-light-syntax",
+  "description": "Solarized Light",
+  "theme": "syntax",
+  "styleSheets": [
+    "tokens.css",
+    "index.css"
+  ],
+  "engines": {
+    "inkdrop": "^6.x"
+  }
+}
