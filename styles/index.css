@@ -4,19 +4,17 @@
 
 :root {
   /*── Editor chrome ────────────────────────────────────────────────────────*/
-  --editor-foreground-color: var(--color-neutral-600); /* base02 */
-  --editor-background-color: var(--color-neutral-100); /* base2 */
+  --editor-foreground-color: var(--color-neutral-500);
+  --editor-background-color: var(--color-neutral-50);
   --editor-caret-color: var(--color-neutral-600);
-  --editor-selection-background: var(--color-neutral-300); /* base0 */
+  --editor-selection-background: var(--color-neutral-300);
   --editor-focused-selection-background: var(--color-neutral-300);
-  --editor-active-line-background-color: hsl(
-    var(--hsl-neutral-200) / 50%
-  ); /* base1 */
+  --editor-active-line-background-color: hsl(var(--hsl-neutral-200) / 50%);
   --editor-special-char-color: var(--color-neutral-400);
   --editor-spelling-error-color: var(--negative-color);
 
   --editor-gutter-border-right: none;
-  --editor-gutter-color: var(--color-neutral-400); /* fg */
+  --editor-gutter-color: var(--color-yellow-400);
   --editor-gutter-background-color: transparent;
   --editor-gutter-background-solid-color: var(--color-neutral-200);
   --editor-active-line-gutter-background-color: hsl(
@@ -41,12 +39,12 @@
   );
   --editor-tooltip-autocomplete-section-border-color: var(--color-neutral-400);
   --editor-tooltip-autocomplete-item-selected-color: var(--color-neutral-800);
-  --editor-inline-tooltip-color: var(--color-neutral-700);
-  --editor-inline-tooltip-background-color: hsl(var(--hsl-neutral-200) / 40%);
-  --editor-inline-tooltip-outline: 1px solid var(--color-neutral-300);
+  --editor-inline-tooltip-color: var(--color-neutral-500);
+  --editor-inline-tooltip-background-color: hsl(var(--hsl-neutral-50));
+  --editor-inline-tooltip-outline: 1px solid var(--color-neutral-100);
 
-  --editor-completion-label: var(--color-neutral-700);
-  --editor-completion-matched-text-color: var(--color-neutral-800);
+  --editor-completion-label: var(--color-neutral-600);
+  --editor-completion-matched-text-color: var(--color-neutral-700);
   --editor-completion-matched-text-decoration: none;
   --editor-completion-matched-text-font-style: normal;
   --editor-completion-matched-text-font-weight: bold;
@@ -90,20 +88,21 @@
 
   /*── Markdown elements ────────────────────────────────────────────────────*/
   --md-inline-code-padding: 1px;
-  --md-inline-code-border-color: hsl(var(--hsl-neutral-400) / 50%);
+  --md-inline-code-border-color: hsl(var(--hsl-neutral-200));
   --md-inline-code-border-width: 1px;
-  --md-inline-code-background-color: hsl(var(--hsl-neutral-200) / 20%);
-  --md-codeblock-border-color: var(--color-neutral-300);
+  --md-inline-code-background-color: hsl(var(--hsl-neutral-100));
+  --md-codeblock-color: var(--editor-foreground-color);
+  --md-codeblock-border-color: var(--color-neutral-200);
   --md-codeblock-border-width: 1px;
-  --md-codeblock-background-color: hsl(var(--hsl-neutral-200) / 20%);
+  --md-codeblock-background-color: hsl(var(--hsl-neutral-100));
 
   --md-inline-mark-text-color: var(--color-red-950);
   --md-inline-mark-background-color: hsl(var(--hsl-red-100));
   --md-inline-mark-underline-color: hsl(var(--hsl-red-500));
 
-  --md-table-border-color: var(--color-neutral-300);
+  --md-table-border-color: var(--color-neutral-200);
   --md-table-border-width: 1px;
-  --md-table-background-color: hsl(var(--hsl-neutral-200) / 20%);
+  --md-table-background-color: hsl(var(--hsl-neutral-100));
 
   --md-blockquote-border-color: var(--color-neutral-400);
 }
@@ -132,7 +131,7 @@
 
   /* variable names -----------------------------------------------------*/
   .tok-variable-name {
-    color: var(--color-neutral-500); /* base00 */
+    color: var(--color-neutral-500);
   }
 
   /* function identifiers, calls & definitions -------------------------*/
@@ -148,7 +147,7 @@
   .tok-self,
   .tok-color,
   .tok-name.tok-constant {
-    color: var(--color-pink-500); /* magenta */
+    color: var(--color-pink-500);
   }
 
   /* numbers ------------------------------------------------------------*/
@@ -239,7 +238,7 @@
   .tok-line-comment,
   .tok-block-comment,
   .tok-doc-comment {
-    color: var(--color-neutral-400); /* fg */
+    color: var(--color-neutral-400);
     font-style: italic;
   }
 
@@ -258,7 +257,7 @@
 
   /* emphasis variants --------------------------------------------------*/
   .tok-strong {
-    color: var(--color-neutral-900); /* (intermediate) */
+    color: var(--color-neutral-700);
     font-weight: bold;
   }
   .tok-emphasis {
@@ -300,7 +299,7 @@
 
   /* invalid / unsyntactic tokens --------------------------------------*/
   .tok-invalid {
-    color: var(--color-neutral-300); /* base0 */
+    color: var(--color-neutral-300);
     border-bottom: 1px dotted var(--color-red-500);
   }
 
