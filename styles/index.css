@@ -7,6 +7,7 @@
   --editor-foreground-color: var(--color-neutral-500);
   --editor-background-color: var(--color-neutral-50);
   --editor-caret-color: var(--color-neutral-600);
+  /* --editor-selection-foreground: var(--color-neutral-800); */
   --editor-selection-background: var(--color-neutral-300);
   --editor-focused-selection-background: var(--color-neutral-300);
   --editor-active-line-background-color: hsl(var(--hsl-neutral-200) / 50%);
@@ -21,8 +22,8 @@
     var(--hsl-neutral-200) / 50%
   );
 
-  --editor-panel-background-color: var(--color-neutral-200);
-  --editor-panel-color: var(--color-neutral-700);
+  --editor-panel-background-color: var(--color-neutral-100);
+  --editor-panel-color: var(--color-neutral-500);
   --editor-panel-border-color: var(--border-color);
 
   --editor-tooltip-border-style: solid;
@@ -88,21 +89,21 @@
 
   /*── Markdown elements ────────────────────────────────────────────────────*/
   --md-inline-code-padding: 1px;
-  --md-inline-code-border-color: hsl(var(--hsl-neutral-200));
+  --md-inline-code-border-color: hsl(var(--hsl-neutral-500) / 15%);
   --md-inline-code-border-width: 1px;
-  --md-inline-code-background-color: hsl(var(--hsl-neutral-100));
+  --md-inline-code-background-color: hsl(var(--hsl-neutral-100) / 50%);
   --md-codeblock-color: var(--editor-foreground-color);
-  --md-codeblock-border-color: var(--color-neutral-200);
+  --md-codeblock-border-color: hsl(var(--hsl-neutral-500) / 15%);
   --md-codeblock-border-width: 1px;
-  --md-codeblock-background-color: hsl(var(--hsl-neutral-100));
+  --md-codeblock-background-color: hsl(var(--hsl-neutral-100) / 50%);
 
   --md-inline-mark-text-color: var(--color-red-950);
   --md-inline-mark-background-color: hsl(var(--hsl-red-100));
   --md-inline-mark-underline-color: hsl(var(--hsl-red-500));
 
-  --md-table-border-color: var(--color-neutral-200);
+  --md-table-border-color: hsl(var(--hsl-neutral-500) / 15%);
   --md-table-border-width: 1px;
-  --md-table-background-color: hsl(var(--hsl-neutral-100));
+  --md-table-background-color: hsl(var(--hsl-neutral-100) / 50%);
 
   --md-blockquote-border-color: var(--color-neutral-400);
 }
