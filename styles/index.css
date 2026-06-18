@@ -6,7 +6,7 @@
   /*── Editor chrome ────────────────────────────────────────────────────────*/
   --editor-foreground-color: var(--color-neutral-600); /* base02 */
   --editor-background-color: var(--color-neutral-100); /* base2 */
-  --editor-caret-color: var(--color-neutral-700); /* base02 */
+  --editor-caret-color: var(--color-neutral-600);
   --editor-selection-background: var(--color-neutral-300); /* base0 */
   --editor-focused-selection-background: var(--color-neutral-300);
   --editor-active-line-background-color: hsl(
